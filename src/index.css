@@ -1,0 +1,1411 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #171717;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* THIS IS NOW FOR THE HOME PAGE */
+
+header {
+  border-bottom: 2px solid black;
+}
+
+.page {
+  margin: 20px;
+}
+
+.homePage {
+  height: 3050px;
+  width: 1440px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding-left: 30px;
+}
+
+a:hover {
+  color: rgb(80, 80, 80);
+}
+
+.linkToTop button {
+  width: 90px;
+  position: fixed;
+  bottom: 20px;
+  color: rgb(80, 80, 80);
+  border: none;
+  background: none;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.linkToTopHigher button {
+  bottom: 70px;
+  width: 70px;
+  position: fixed;
+  color: rgb(80, 80, 80);
+  border: none;
+  background: none;
+}
+
+.linkToTopHigher button:hover,
+.linkToTop button:hover {
+  color: #444444;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+nav,
+.homePageNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  /* padding-right: 50px; */
+  height: 100px;
+}
+
+.projectsPagesNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 50px;
+  height: 100px;
+  background: transparent;
+}
+
+.link {
+  text-align: center;
+  font-size: 16.5px;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+.link:hover {
+  color: rgb(80, 80, 80);
+}
+
+.largeProfileImage {
+  width: 650px;
+  height: 650px;
+  flex-shrink: 0;
+}
+
+.greetingContainer {
+  width: 346px;
+  height: 233px;
+  margin-left: 160px;
+  margin-top: 320px;
+}
+
+.greetingTextTitle {
+  font-size: 48px;
+  color: white;
+}
+
+.frontEndText {
+  color: #828282;
+  padding-top: 10px;
+}
+
+.cvBtn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  width: 143px;
+  height: 42px;
+  font-size: 17px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  bottom: 310px;
+  font-weight: bold;
+}
+
+.cvBtn:hover {
+  cursor: pointer;
+  background-color: rgb(1, 138, 1);
+}
+
+.projectBtn {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  width: 143px;
+  height: 42px;
+  font-size: 17px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  bottom: 310px;
+  left: 333px;
+  font-weight: bold;
+}
+
+.projectBtn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+.profilePictureBackgroundDiv {
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.082);
+  position: absolute;
+  right: 150px;
+  background: #1f1e1e21;
+  top: 180px;
+}
+
+.profilePictureContainer {
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.082);
+  position: absolute;
+  right: 185px;
+  background: #1f1e1e21;
+  top: 215px;
+  overflow: hidden;
+}
+
+.profilePicture img {
+  z-index: -1;
+  margin-left: -24px;
+  margin-top: -10px;
+  clip: rect(50px 150px 150px 50px);
+  filter: grayscale(100%);
+  max-width: 105%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.aboutMeText {
+  /* border: 1px solid white; */
+  color: white;
+  font-size: 22px;
+  width: 920px;
+  position: absolute;
+  left: 470px;
+  top: 1030px;
+  text-align: center;
+}
+
+.aboutMeHeading {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  left: 855px;
+  top: 970px;
+}
+
+.aboutMeText span {
+  font-weight: bold;
+}
+
+.infoCirclesContainer {
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 1330px;
+  width: 1200px;
+  height: 300px;
+  left: 360px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(1, 138, 1);
+  border: 35px solid #1b1b1b;
+}
+
+/* .circle2:hover,
+.circle3:hover {
+  cursor: pointer;
+} */
+
+.circle1Text,
+.circle2Text,
+.circle3Text,
+.circle4Text {
+  color: white;
+  text-align: center;
+  width: 200px;
+  /* border: 1px solid white; */
+  height: 60px;
+  margin-top: 110px;
+  margin-left: -300px;
+}
+
+.whatIDoContainer {
+  width: 1250px;
+  height: 400px;
+  position: absolute;
+  top: 1660px;
+  left: 305px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatIDoText {
+  color: white;
+  text-align: center;
+  font-size: 43px;
+  font-weight: bold;
+  position: absolute;
+  top: 1580px;
+  left: 820px;
+}
+
+.SDBox,
+.webDevBox,
+.webDesignBox {
+  width: 370px;
+  height: 250px;
+  background: #1b1b1b;
+  color: rgb(80, 80, 80);
+  font-size: 42px;
+}
+
+.SDBoxText {
+  width: 205px;
+  margin-left: 53px;
+  margin-top: 9px;
+}
+
+.sphereIcon {
+  color: #27ae60;
+  margin-left: 45px;
+  margin-top: 25px;
+  font-size: 60px;
+}
+
+.webDevBox {
+  border-bottom: 6px solid #27ae60;
+}
+
+.devImg {
+  width: 50px;
+  height: 45px;
+  margin-left: 50px;
+  margin-top: 35px;
+  border-radius: 5px;
+  background-color: #27ae60;
+  font-size: 24px;
+  color: #1b1b1b;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  padding: 3px;
+  padding-top: 8px;
+}
+
+.webDevText {
+  width: 255px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.cubeIcon {
+  color: #27ae60;
+  margin-left: 45px;
+  margin-top: 25px;
+  font-size: 60px;
+}
+
+.webDesignText {
+  width: 205px;
+  margin-left: 53px;
+  margin-top: 9px;
+}
+
+.mySkillsHeading {
+  position: absolute;
+  top: 2110px;
+  color: white;
+  text-align: center;
+  font-size: 43px;
+  font-weight: bold;
+  position: absolute;
+  left: 845px;
+}
+
+.mySkillsContainer {
+  width: 1250px;
+  height: 265px;
+  border: 1px solid rgb(41, 41, 41);
+  background-color: #1b1b1b;
+  position: absolute;
+  top: 2275px;
+  left: 305px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.html,
+.css,
+.javascript,
+.react {
+  color: rgb(80, 80, 80);
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.htmlText,
+.cssText,
+.javascriptText,
+.reactText {
+  text-align: center;
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.javascript {
+  padding-left: 2px;
+}
+
+.getInTouchHeading {
+  position: absolute;
+  top: 2670px;
+  color: white;
+  text-align: center;
+  font-size: 43px;
+  font-weight: bold;
+  position: absolute;
+  left: 804px;
+}
+
+.getInTouchContainer {
+  position: absolute;
+  top: 2820px;
+  left: 215px;
+}
+
+.getInTouchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.getInTouchContainer {
+  display: flex;
+  justify-content: center;
+  height: 510px;
+  /* border: 1px solid white; */
+  width: 1100px;
+  align-items: left;
+}
+
+.getInTouchForm {
+  background: none;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 1000px;
+}
+
+.nameFields {
+  display: flex;
+  gap: 10px;
+}
+
+.nameInput {
+  flex: 1;
+}
+
+.contactFields {
+  display: flex;
+  gap: 10px;
+}
+
+.inputField {
+  display: block;
+  width: 328px;
+  padding: 10px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: inherit;
+  background: none;
+  border-bottom: 1px solid rgb(80, 80, 80);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.textareaField {
+  background: none;
+  display: block;
+  width: 700px;
+  resize: vertical;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  resize: none;
+  max-height: 130px;
+  min-height: 130px;
+  border: 1px solid rgb(80, 80, 80);
+}
+
+.submitButton {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 10px;
+  font-size: 16px;
+  width: 130px;
+  margin-left: 280px;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: rgb(1, 138, 1);
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  caret-color: #27ae60;
+  color: white;
+}
+
+input,
+textarea {
+  color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(80, 80, 80);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-internal-autofill-selected {
+  -webkit-text-fill-color: white !important;
+  font-family: inherit !important;
+  transition: background-color 5000s ease-in-out 0s,
+    -webkit-text-fill-color 5000s ease-in-out 0s !important;
+}
+
+.pair1,
+.pair2 {
+  position: absolute;
+}
+
+.pair1 {
+  top: 20px;
+}
+
+.pair2 {
+  top: 20px;
+  right: 31px;
+}
+
+.watermark {
+  top: 3350px;
+  position: absolute;
+  color: rgb(80, 80, 80);
+  left: 878px;
+}
+
+.successMessagePopup {
+  position: fixed;
+  color: white;
+  background-color: #27ae60;
+  height: 50px;
+  width: 100%;
+  margin-left: -20px;
+  bottom: 0px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding-top: 9px;
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7a7a7a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+.sendEmailBtn {
+  background: none;
+  border: none;
+  color: rgb(80, 80, 80);
+  position: absolute;
+  width: 160px;
+  top: 65px;
+  left: 42px;
+}
+
+.sendEmailBtn:hover {
+  color: #444444;
+}
+
+/* THIS IS NOW FOR THE PROJECTS PAGE */
+
+.projectsPage main {
+  position: absolute;
+  left: -100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.projectsPage {
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 1903px;
+  overflow-x: hidden;
+}
+
+.projectsPage header {
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.headingContainer {
+  padding-top: 130px;
+  position: relative;
+}
+
+.homePageBtn {
+  margin-left: 60px;
+  margin-top: 70px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.image img {
+  border: none;
+  width: 1904px;
+  height: 595px;
+  position: absolute;
+  top: -160px;
+  right: -460px;
+  filter: grayscale(100);
+  transform: rotate(50deg);
+  overflow-x: hidden;
+}
+
+.homePageBtn:hover {
+  cursor: pointer;
+  color: rgb(80, 80, 80);
+}
+
+.blackBackground {
+  width: 1940px;
+  height: 101vh;
+  background-color: black;
+  overflow-x: hidden;
+  margin-bottom: 80px;
+}
+
+.personalText {
+  font-size: 70px;
+  margin-left: 205.5px;
+}
+
+.projectsText {
+  font-size: 95px;
+  margin-top: -20px;
+  margin-left: 204px;
+}
+
+.bigUnderLine {
+  width: 431px;
+  height: 20px;
+  margin-left: 210px;
+  background: white;
+}
+
+.box2 {
+  margin-top: -170px;
+}
+
+.box1 {
+  margin-top: -160px;
+  width: 1142px;
+  height: 900px;
+  background-color: #1b1b1b;
+  margin-bottom: 0px;
+  border: 1px solid rgb(41, 41, 41);
+  margin-left: 620px;
+}
+
+.box3 {
+  margin-top: -170px;
+}
+
+.box2,
+.box3,
+.box4 {
+  width: 1142px;
+  height: 900px;
+  background-color: #1b1b1b;
+  margin-bottom: -3px;
+  border: 1px solid rgb(41, 41, 41);
+  margin-left: 620px;
+}
+
+.projectsPage main img {
+  width: 1080px;
+  height: 595px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid rgb(41, 41, 41);
+}
+
+.textArea {
+  /* border: 1px solid white; */
+  padding-top: 3px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.stickyElement1 {
+  font-weight: bold;
+  width: 200px;
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: -3px; /* Set to 0 to stick when top edge touches the top of the viewport */
+  margin-left: 300px;
+  font-size: 60px;
+  margin-bottom: -82px;
+  /* border: 1px solid white; */
+}
+
+.row1 {
+  height: 820px;
+}
+
+.stickyElement2 {
+  /* border: 1px solid white; */
+  font-weight: bold;
+  width: 210px;
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: -3px;
+  margin-left: 300px;
+  font-size: 60px;
+  margin-top: 200px;
+}
+
+.stickyElement3 {
+  font-weight: bold;
+  width: 372px;
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: -3px; /* Set to 0 to stick when top edge touches the top of the viewport */
+  margin-left: 240px;
+  font-size: 60px;
+  margin-bottom: 0px;
+  margin-top: 120px;
+  /* border: 1px solid white; */
+}
+
+.vertLine {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  background-color: white;
+  width: 20px;
+  height: 159px;
+  top: 0px;
+  margin-left: 300px;
+  margin-top: -159px;
+}
+
+.vertLine2 {
+  height: 169px;
+}
+
+.vertLine3 {
+  margin-left: 360px;
+  height: 169px;
+}
+
+.vertLine4 {
+  height: 300px;
+  margin-top: 125px;
+}
+
+.tileMatchingGameText {
+  position: absolute;
+  top: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.box4 {
+  margin-top: -300.3px;
+  margin-bottom: 200px;
+}
+
+.stickyElement4 {
+  font-weight: bold;
+  width: 200px;
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: -3px; /* Set to 0 to stick when top edge touches the top of the viewport */
+  margin-left: 300px;
+  font-size: 60px;
+  margin-bottom: -82px;
+  margin-top: 40px;
+}
+
+.row1 button,
+.row2 button,
+.row3 button,
+.row4 button {
+  padding: 8px;
+  position: absolute;
+  color: white;
+  background-color: #171717;
+  border: 1px solid rgb(41, 41, 41);
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.row1 button:hover,
+.row2 button:hover,
+.row3 button:hover,
+.row4 button:hover {
+  background-color: #17171733;
+}
+
+.seeMoreBtn {
+  left: 1010px;
+  margin-top: 0px;
+}
+
+.codeBtn {
+  left: 1210px;
+  margin-top: 0px;
+}
+
+.textArea {
+  height: 115px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.text1 p {
+  font-size: 21px;
+}
+.text2 p {
+  font-size: 20px;
+}
+.text3 p {
+  font-size: 20px;
+}
+.text4 p {
+  font-size: 20px;
+}
+
+/* Upcoming Project Section */
+.upcoming-project {
+  width: 1142px;
+  height: 200px;
+  background-color: #1b1b1b;
+  margin-bottom: -3px;
+  border: 1px solid rgb(41, 41, 41);
+  margin-left: 620px;
+}
+
+.upcoming-project-text {
+  max-width: 800px;
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-left: 165px;
+  margin-top: 35px;
+}
+
+.upcoming-project-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.upcoming-project-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.goToTop a {
+  width: 150px;
+  position: fixed;
+  bottom: 20px;
+  font-size: 15px;
+  left: -5px;
+  color: rgb(80, 80, 80);
+  border: none;
+  background: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.techStackDiv {
+  background-color: rgb(80, 80, 80);
+  width: 100%;
+  height: 75px;
+  margin-top: 80px;
+  color: black;
+  border-top: 1px solid rgb(41, 41, 41);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.techStackText {
+  font-weight: bold;
+}
+
+/*  This is the CSS STYLING FOR MY WEATHER APP PAGE */
+
+/* WeatherAppProject.css */
+.project-page {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: rgb(80, 80, 80);
+}
+
+.project-page .project-page-nav a {
+  font-size: 30px;
+}
+
+.project-details {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1b1b1b;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgb(41, 41, 41);
+}
+
+.project-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.project-summary {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.project-page-nav {
+  margin-right: 20px;
+}
+
+.marginRight {
+  margin-right: 40px;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Key Features Section */
+.project-section {
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Lessons Learned and Future Enhancements Sections */
+.project-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.project-image-description {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* Style for the project images */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.project-image-container:hover .project-image {
+  opacity: 0.5;
+}
+
+.project-image-container:hover .project-image-description {
+  opacity: 1;
+}
+
+.spinner {
+  height: 70.4px;
+  width: 70.4px;
+  --clr: rgb(255, 255, 255);
+  --clr-alpha: rgba(255, 255, 255, 0.144);
+  animation: spinner 1.6s infinite ease;
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 700px;
+  top: 300px;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-35.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(35.2px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #01ff6b;
+  --bg-color-sub: #222;
+  --bg-color: #323232;
+  --main-color: #01ff6b;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+.btnMarginRight {
+  margin-left: -171px;
+  width: 158px;
+  position: absolute;
+  top: 6px;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(12px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
+.cssbuttons-io-button {
+  position: absolute;
+  bottom: 65px;
+  left: 170px;
+  background: #363636;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #252525;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #000000;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #080808;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.goToTheTopOfThePage:hover {
+  color: #444444;
+}
+
+/* Resume container */
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #1b1b1b;
+  box-shadow: 30px 30px 30px black;
+  border: 2px solid rgb(41, 41, 41);
+}
+
+/* Experience section */
+.experience-section h2,
+.education-section h2,
+.courses-section h2,
+.hobbies-section h2,
+.skills-section h2,
+.references-section h2 {
+  color: white;
+  margin-top: 20px;
+}
+
+.resume-container h1 {
+  color: white;
+}
+
+.experience-item h3 {
+  color: white;
+  margin-top: 10px;
+}
+
+.resume-container p {
+  color: white;
+  margin-top: 10px;
+}
+
+.experience-item ul {
+  list-style: disc;
+}
+
+.resume-container li {
+  margin-top: 5px;
+  color: white;
+  margin-left: 20px;
+}
+
+.resumePage {
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.homeOnResumePage {
+  font-size: 20px;
+}
+
+.scrollDownContainer {
+  color: white;
+}
+
+.scrollDown {
+  position: absolute;
+  left: 180px;
+  font-weight: normal;
+}
+
+.scrollDown:hover {
+  cursor: pointer;
+}
+
+.scroll1 {
+  top: 470px;
+  text-decoration: underline;
+}
+
+.scroll2 {
+  top: 505px;
+  text-decoration: underline;
+}
+
+.scroll3 {
+  top: 540px;
+  text-decoration: underline;
+}
+
+.scroll4 {
+  top: 575px;
+  text-decoration: underline;
+}
+
+.scroll5 {
+  top: 610px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.goToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 25px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: rgb(80, 80, 80);
+}
+
+.goToTop:hover {
+  color: #444444;
+}
+
+.goToTopHigher {
+  bottom: 70px;
+}
+
+.indProjectTopLink {
+  margin-bottom: 20px;
+}
+
+.indProjectTopLink:hover {
+  cursor: pointer;
+}
+
+.skillsLink:hover {
+  cursor: pointer;
+}
+
+.contactMeLink:hover {
+  cursor: pointer;
+}
